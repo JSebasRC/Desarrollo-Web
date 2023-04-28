@@ -2,118 +2,144 @@
     padding: 0;
     margin: 0;
 }
+
 :root {
-    --color-1: #E2DEDE;
-    --color-2: #EFEEF6;
+    --color-1: #E2DEDE !important;
+    --color-2: #EFEEF6 !important;
+    --orange: #C66B0F !important;
+    --black: #000000 !important;
+    --green: #91C68D !important;
+    --gray-1: #E2DDD9 !important;
+    --gray-2: #747274 !important;
+}
+
+/*CLASES DE COLORES DE TEXTO*/
+.text-orange {
+    color: var(--orange);
+}
+
+.text-black {
+    color: var(--black);
+}
+
+.text-green {
+    color: var(--green);
+}
+
+.text-gray-1 {
+    color: var(--gray-1);
+}
+
+.text-gray-2 {
+    color: var(--gray-2);
+}
+
+/*CLASES DE COLORES DE BACKGROUND*/
+.background-orange {
+    color: var(--orange);
+}
+
+.background-black {
+    background-color: var(--black);
+}
+
+.background-green {
+    background-color: var(--green);
+}
+
+.background-gray-1 {
+    background-color: var(--gray-1);
+}
+
+.background-gray-2 {
+    background-color: var(--gray-2);
 }
 
 /* Fuentes */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 
-body {
-    font-family: 'Montserrat', sans-serif;
+.font-roboto-cond {
+    font-family: 'Roboto Condensed', Lato, Arial, sans-serif;
 }
+
+.font-roboto-mono {
+    font-family: 'Roboto Mono', monospace;
+}
+
 /*ESTILOS HEADER*/
-#header {
+#header nav {
     height: 102px;
     width: 100%;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #000;
 }
-#header nav {
-    width: 100%;
-    display: flex;
+
+.nav-link {
+    color: var(--gray-2) !important;
 }
-#header .container-img {
-    width: 30%;
-    display: flex;
-    justify-content: center;
+
+.nav-link:hover {
+    color: var(--orange) !important;
 }
-#header .container-ul {
-    width: 70%;
-    display: flex;
-    justify-content: space-evenly;
-    margin: 1rem 0 2rem 2rem;
-    align-items: flex-start;
+
+.navbar-nav .active>.nav-link,
+.navbar-nav .nav-link.active {
+    color: #fff !important;
 }
-#header nav img {
-    max-width: 4rem;
-    height: auto;
+
+.navbar-nav {
+    align-items: flex-end;
+}
+
+.navbar-nav__navbar-brand--icon {
+    max-width: 150px;
     width: 100%;
 }
-#header ul {
-    list-style: none;
+
+@media (min-width: 768px) {
+    .navbar-nav__navbar-brand--icon {
+        max-width: 200px;
+        width: 100%;
+    }
 }
-#header ul a{
-    text-decoration: none;
-    color: #000;
-    font-size: 1.2rem;
-    font-weight: 200;
-}
-#header ul a:hover{
-    font-weight: 600;
-}
+
 /*FIN ESTILOS HEADER*/
 
-/* ESTILOS SECTION*/
-.section-profile {
+/*ESTILOS SECCIÓN PERFIL PAGE INDEX.HTML*/
+.container__image-profile {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 642px;
+}
+
+.container__image-profile--img {
     width: 100%;
-    background-color: var(--color-1);
-}
-.background-img-profile {
-    background-image: url(assets/background-Image.png);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: center;
-    width: 100%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    padding: 3rem 0;
-}
-.text {
-    font-size: 1.25rem;
-    color: #000;
-    text-align: center;
-    padding-top: 1rem;
-}
-.container-profile-description {
-    display: flex;
-    background-color: var(--color-1);
-    padding: 2rem;
-}
-.container-img-profile {
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1rem;
-}
-.container-img-profile img{
-    width: auto;
-    height: 70%;
-}
-.container-text p{
-    display: flex;
     height: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 5rem;
+    object-fit: cover;
 }
-.text-description {
-    font-size: 1rem;
-    font-weight: 200;
+
+/* FIN ESTILOS SECTION PERFIL PAGE INDEX.HTML*/
+
+/*ESTILOS SECCIÓN EXPERIENCIA PAGE INDEX.HTML*/
+
+.carousel-size {
+    max-width: 800px;
+    max-height: 500px;
+    height: 100%;
+    width: 100%;
+    margin-top: 300px;
+    margin-bottom: 300px;
 }
-/* FIN ESTILOS SECTION*/
+
+.carousel-item img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* FIN ESTILOS SECCIÓN EXPERIENCIA PAGE INDEX.HTML*/
 /*ESTILOS FOOTER*/
 #footer {
     display: flex;
@@ -121,23 +147,27 @@ body {
     color: var(--color-2);
     align-items: center;
 }
+
 #footer .text-footer {
     width: 30%;
     color: #000;
     font-weight: 300;
     padding-bottom: 0;
 }
-#footer .container-icons-social-media{
+
+#footer .container-icons-social-media {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     width: 70%;
 }
-#footer .container-icons-social-media img{
+
+#footer .container-icons-social-media img {
     width: 2rem;
-	--tw-space-x-reverse: 0;
+    --tw-space-x-reverse: 0;
     margin-right: calc(1rem * var(--tw-space-x-reverse));
     margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
     cursor: pointer;
 }
+
 /*FIN ESTILOS FOOTER*/
