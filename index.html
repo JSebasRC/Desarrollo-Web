@@ -11,8 +11,8 @@
 
 </head>
 
-<body>
-  <header id="header">
+<body class="background-black">
+  <header id="header" class="container">
     <nav class="navbar navbar-expand-lg background-black">
       <div class="container-fluid">
         <a class="navbar-brand" href="#"><img class="navbar-nav__navbar-brand--icon" src="assets/images/logo.png"
@@ -45,33 +45,29 @@
       </div>
     </nav>
   </header>
-
-  <section id="profile" class="background-black">
-    <div class="d-flex align-items-center justify-content-center">
-      <div class="d-flex flex-column align-items-center justify-content-center ps-5 ms-5">
+  <!-- sección perfil -->
+  <section id="profile" class="container">
+    <div class="row pt-5 pb-5">
+      <div class="pt-5 col-12 col-md-6 order-2 order-md-1">
+        <p class="text-gray-2 font-roboto-mono fs-5">Hello My Name Is <a href="pages/perfil.html"
+            class="text-decoration-none text-reset"><span class="text-orange fw-bold">S</span>ebas</a>
+        </p>
+        <h1 class="text-orange fw-bold fs-1">I make websites.</h1>
+        <h4 class="text-gray-2">I'm a frontend developer passionate about technology with many skills, stay tuned to
+          learn more.</h4>
+      </div>
+      <div class="col-12 col-md-6 d-flex justify-content-center justify-md-content-end align-items-center order-1 order-md-2">
         <div class="container__image-profile">
           <img class="container__image-profile--img" src="assets/images/img-profile.jpg" alt="">
         </div>
-        <div class="pt-5">
-          <p class="text-gray-2 font-roboto-mono fs-5">Hello My Name Is <span class="text-orange fw-bold">S</span>ebas</p>
-          <h1 class="text-orange fw-bold fs-1">I make websites.</h1>
-          <h4 class="text-gray-2">I'm a frontend developer passionate about technology with many skills, stay tuned to learn more.</h4>
-        </div>
-      </div>
-      <div class="">
-        <div class="d-flex justify-content-center align-items-center pt-5 pb-5">
-          <img class="opacity-25 object-fit-cover" src="assets/images/background-profile.jpg" alt="">
-        </div>
       </div>
     </div>
-
   </section>
-  <section id="experiencia" class="background-black">
-    <div class="container">
-      <h2 class="text-center text-gray-2 fw-normal font-roboto-mono pb-4">Proyects</h2>
-      <h5 class="text-center text-gray-2">Participation in different projects with different languages, frameworks and tools.</h5>
-    </div>
-
+  <!-- sección proyectos -->
+  <section id="experiencia" class="container">
+    <h2 class="text-center text-gray-2 fw-normal font-roboto-mono pb-4">Proyects</h2>
+    <h5 class="text-center text-gray-2">Participation in different projects with different languages, frameworks and
+      tools.</h5>
     <!-- Carrousel de imágenes -->
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <!-- Indicadores -->
@@ -83,12 +79,12 @@
         <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
         <li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
       </ol>
-    
       <!-- Contenido del carrusel -->
       <div class="carousel-inner">
         <div class="carousel-item active">
           <div class="container">
-            <a target="_blank" href="https://merkub.com/"><img src="assets/images/proyect-merkub.svg" alt="Logo proyecto merkub"></a>
+            <a target="_blank" href="https://merkub.com/"><img src="assets/images/proyect-merkub.svg"
+                alt="Logo proyecto merkub"></a>
           </div>
           <div class="carousel-caption">
             <h5 class="text-gray-2">Proyecto desarrollado con html y css</h5>
@@ -96,7 +92,8 @@
         </div>
         <div class="carousel-item">
           <div class="container">
-            <a target="_blank" href="https://furore.co/home/"><img src="assets/images/proyect-furore.svg" alt="Logo proyecto furore"></a>
+            <a target="_blank" href="https://furore.co/home/"><img src="assets/images/proyect-furore.svg"
+                alt="Logo proyecto furore"></a>
           </div>
           <div class="carousel-caption">
             <h5 class="text-gray-2">Proyecto desarrollado con html y css</h5>
@@ -104,7 +101,8 @@
         </div>
         <div class="carousel-item">
           <div class="container">
-            <a target="_blank" href="https://www.agrogo.com.co/"><img src="assets/images/proyect-agrogo.svg" alt="Logo proyecto agrogo"></a>
+            <a target="_blank" href="https://www.agrogo.com.co/"><img src="assets/images/proyect-agrogo.svg"
+                alt="Logo proyecto agrogo"></a>
           </div>
           <div class="carousel-caption">
             <h5 class="text-gray-2">Proyecto desarrollado con html y css</h5>
@@ -112,7 +110,8 @@
         </div>
         <div class="carousel-item">
           <div class="container">
-            <a target="_blank" href="https://puntodeservicios.com/"><img src="assets/images/proyect-puntodeservicio.png" alt="Logo proyecto punto de servicio"></a>
+            <a target="_blank" href="https://puntodeservicios.com/"><img src="assets/images/proyect-puntodeservicio.png"
+                alt="Logo proyecto punto de servicio"></a>
           </div>
           <div class="carousel-caption">
             <h5 class="text-gray-2">Proyecto desarrollado con html y css</h5>
@@ -120,7 +119,8 @@
         </div>
         <div class="carousel-item">
           <div class="container">
-            <a target="_blank" href="https://romeokids.com/"><img src="assets/images/proyect-romeokids.png" alt="Logo proyecto romeokids"></a>
+            <a target="_blank" href="https://romeokids.com/"><img src="assets/images/proyect-romeokids.png"
+                alt="Logo proyecto romeokids"></a>
           </div>
           <div class="carousel-caption">
             <h5 class="text-gray-2">Proyecto desarrollado con html y css</h5>
@@ -128,14 +128,15 @@
         </div>
         <div class="carousel-item">
           <div class="container">
-            <a target="_blank" href="https://perse.opperdev.com/"><img src="assets/images/proyect-perse.png" alt="Logo proyecto perse"></a>
+            <a target="_blank" href="https://perse.opperdev.com/"><img src="assets/images/proyect-perse.png"
+                alt="Logo proyecto perse"></a>
           </div>
           <div class="carousel-caption">
             <h5 class="text-gray-2">Proyecto desarrollado con html y css</h5>
           </div>
         </div>
       </div>
-    
+
       <!-- Controles de navegación -->
       <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -146,21 +147,31 @@
         <span class="visually-hidden">Siguiente</span>
       </a>
     </div>
-  </section>
-  <footer id="footer" class="footer">
-    <p class="text-footer">© Made with <span><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20"
-                height="20" viewBox="0 0 20 20">
-                <path fill="#988e9f"
-                    d="M5.719 14.75c-0.236 0-0.474-0.083-0.664-0.252l-5.060-4.498 5.341-4.748c0.412-0.365 1.044-0.33 1.411 0.083s0.33 1.045-0.083 1.412l-3.659 3.253 3.378 3.002c0.413 0.367 0.45 0.999 0.083 1.412-0.197 0.223-0.472 0.336-0.747 0.336zM14.664 14.748l5.341-4.748-5.060-4.498c-0.413-0.367-1.045-0.33-1.411 0.083s-0.33 1.045 0.083 1.412l3.378 3.003-3.659 3.252c-0.413 0.367-0.45 0.999-0.083 1.412 0.197 0.223 0.472 0.336 0.747 0.336 0.236 0 0.474-0.083 0.664-0.252zM9.986 16.165l2-12c0.091-0.545-0.277-1.060-0.822-1.151-0.547-0.092-1.061 0.277-1.15 0.822l-2 12c-0.091 0.545 0.277 1.060 0.822 1.151 0.056 0.009 0.11 0.013 0.165 0.013 0.48 0 0.904-0.347 0.985-0.835z">
-                </path>
-            </svg></span> by JS_RC. Colombia 2023.</p>
-    <div class="container-icons-social-media">
-        <img src="assets/images/icon-github.png" alt="">
-        <img src="assets/images/icon-linkedin.png" alt="">
-        <img src="assets/images/icon-behance.png" alt="">
-        <img src="assets/images/icon-instagram.png" alt="">
+    <!-- botón ver mas -->
+    <div class="d-flex align-items-center justify-content-center pt-5 pb-5">
+      <a href="pages/experiencia.html"><button type="button" class="btn btn-dark font-roboto-mono text-center">Ver
+          mas</button></a>
     </div>
-</footer>
+
+  </section>
+  <footer id="footer" class="container-fluid background-gray-1">
+    <div class="container d-flex align-items-center justify-content-between pt-5 pb-5">
+      <p class="text-footer fw-light mb-0">© Made with <span><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20"
+            height="20" viewBox="0 0 20 20">
+            <path fill="#988e9f"
+              d="M5.719 14.75c-0.236 0-0.474-0.083-0.664-0.252l-5.060-4.498 5.341-4.748c0.412-0.365 1.044-0.33 1.411 0.083s0.33 1.045-0.083 1.412l-3.659 3.253 3.378 3.002c0.413 0.367 0.45 0.999 0.083 1.412-0.197 0.223-0.472 0.336-0.747 0.336zM14.664 14.748l5.341-4.748-5.060-4.498c-0.413-0.367-1.045-0.33-1.411 0.083s-0.33 1.045 0.083 1.412l3.378 3.003-3.659 3.252c-0.413 0.367-0.45 0.999-0.083 1.412 0.197 0.223 0.472 0.336 0.747 0.336 0.236 0 0.474-0.083 0.664-0.252zM9.986 16.165l2-12c0.091-0.545-0.277-1.060-0.822-1.151-0.547-0.092-1.061 0.277-1.15 0.822l-2 12c-0.091 0.545 0.277 1.060 0.822 1.151 0.056 0.009 0.11 0.013 0.165 0.013 0.48 0 0.904-0.347 0.985-0.835z">
+            </path>
+          </svg></span> by JS_RC. Colombia 2023.</p>
+      <div class="d-flex">
+        <img src="assets/images/icon-github.png" alt="" width="30" class="mx-2">
+        <img src="assets/images/icon-linkedin.png" alt="" width="30" class="mx-2">
+        <img src="assets/images/icon-behance.png" alt="" width="30" class="mx-2">
+        <img src="assets/images/icon-instagram.png" alt="" width="30" class="mx-2">
+      </div>
+    </div>
+
+  </footer>
+
 
   <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
