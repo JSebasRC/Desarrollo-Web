@@ -10,9 +10,9 @@
     <title>Experiencia</title>
 </head>
 
-<body>
-    <header id="header">
-        <nav class="navbar navbar-expand-lg background-black">
+<body class="background-black">
+    <header id="header" class="container">
+        <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img class="navbar-nav__navbar-brand--icon"
                         src="../assets/images/logo.png" alt=""></a>
@@ -21,7 +21,7 @@
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="collapse navbar-collapse opacity-50" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 font-roboto-mono fw-bold fs-6">
                         <li class="nav-item">
                             <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
@@ -45,19 +45,114 @@
             </div>
         </nav>
     </header>
-    <h1>Page Experiencia</h1>
-    <footer id="footer" class="footer">
-        <p class="text-footer">© Made with <span><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20"
-                    height="20" viewBox="0 0 20 20">
-                    <path fill="#988e9f"
-                        d="M5.719 14.75c-0.236 0-0.474-0.083-0.664-0.252l-5.060-4.498 5.341-4.748c0.412-0.365 1.044-0.33 1.411 0.083s0.33 1.045-0.083 1.412l-3.659 3.253 3.378 3.002c0.413 0.367 0.45 0.999 0.083 1.412-0.197 0.223-0.472 0.336-0.747 0.336zM14.664 14.748l5.341-4.748-5.060-4.498c-0.413-0.367-1.045-0.33-1.411 0.083s-0.33 1.045 0.083 1.412l3.378 3.003-3.659 3.252c-0.413 0.367-0.45 0.999-0.083 1.412 0.197 0.223 0.472 0.336 0.747 0.336 0.236 0 0.474-0.083 0.664-0.252zM9.986 16.165l2-12c0.091-0.545-0.277-1.060-0.822-1.151-0.547-0.092-1.061 0.277-1.15 0.822l-2 12c-0.091 0.545 0.277 1.060 0.822 1.151 0.056 0.009 0.11 0.013 0.165 0.013 0.48 0 0.904-0.347 0.985-0.835z">
-                    </path>
-                </svg></span> by JS_RC. Colombia 2023.</p>
-        <div class="container-icons-social-media">
-            <img src="../assets/images/icon-github.png" alt="">
-            <img src="../assets/images/icon-linkedin.png" alt="">
-            <img src="../assets/images/icon-behance.png" alt="">
-            <img src="../assets/images/icon-instagram.png" alt="">
+    <section class="container">
+        <div class="d-flex pt-5">
+            <h2 class="font-roboto-mono text-orange">Participación <span class="fs-5 font-roboto-cond text-gray-2"> en diferentes proyectos de desarrollo web, proyectos realizados con
+                herramientas como WordPress, Shopify, también desarrollos a medida con lenguajes como html, css, Java
+                Script, frameworks como Vue.js, librerías como tailwind o bootstrap</span></h2>
+        </div>
+
+        <!-- Carrousel de imágenes -->
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicadores -->
+            <ol class="carousel-indicators">
+                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+                <li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
+            </ol>
+            <!-- Contenido del carrusel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <a target="_blank" href="https://merkub.com/"><img src="../assets/images/proyect-merkub.svg"
+                                alt="Logo proyecto merkub"></a>
+                    </div>
+                    <div class="carousel-caption">
+                        <h5 class="text-gray-2">Proyecto desarrollado con html y css</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <a target="_blank" href="https://furore.co/home/"><img src="../assets/images/proyect-furore.svg"
+                                alt="Logo proyecto furore"></a>
+                    </div>
+                    <div class="carousel-caption">
+                        <h5 class="text-gray-2">Proyecto desarrollado con html y css</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <a target="_blank" href="https://www.agrogo.com.co/"><img
+                                src="../assets/images/proyect-agrogo.svg" alt="Logo proyecto agrogo"></a>
+                    </div>
+                    <div class="carousel-caption">
+                        <h5 class="text-gray-2">Proyecto desarrollado con html y css</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <a target="_blank" href="https://puntodeservicios.com/"><img
+                                src="../assets/images/proyect-puntodeservicio.png"
+                                alt="Logo proyecto punto de servicio"></a>
+                    </div>
+                    <div class="carousel-caption">
+                        <h5 class="text-gray-2">Proyecto desarrollado con html y css</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <a target="_blank" href="https://romeokids.com/"><img
+                                src="../assets/images/proyect-romeokids.png" alt="Logo proyecto romeokids"></a>
+                    </div>
+                    <div class="carousel-caption">
+                        <h5 class="text-gray-2">Proyecto desarrollado con html y css</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <a target="_blank" href="https://perse.opperdev.com/"><img
+                                src="../assets/images/proyect-perse.png" alt="Logo proyecto perse"></a>
+                    </div>
+                    <div class="carousel-caption">
+                        <h5 class="text-gray-2">Proyecto desarrollado con html y css</h5>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles de navegación -->
+            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </a>
+        </div>
+
+    </section>
+
+    <footer id="footer" class="container-fluid background-gray-1">
+        <div class="container d-flex align-items-center justify-content-between pt-5 pb-5">
+            <p class="fw-light mb-0">© Made with <span><svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="20"
+                        height="20" viewBox="0 0 20 20">
+                        <path fill="#988e9f"
+                            d="M5.719 14.75c-0.236 0-0.474-0.083-0.664-0.252l-5.060-4.498 5.341-4.748c0.412-0.365 1.044-0.33 1.411 0.083s0.33 1.045-0.083 1.412l-3.659 3.253 3.378 3.002c0.413 0.367 0.45 0.999 0.083 1.412-0.197 0.223-0.472 0.336-0.747 0.336zM14.664 14.748l5.341-4.748-5.060-4.498c-0.413-0.367-1.045-0.33-1.411 0.083s-0.33 1.045 0.083 1.412l3.378 3.003-3.659 3.252c-0.413 0.367-0.45 0.999-0.083 1.412 0.197 0.223 0.472 0.336 0.747 0.336 0.236 0 0.474-0.083 0.664-0.252zM9.986 16.165l2-12c0.091-0.545-0.277-1.060-0.822-1.151-0.547-0.092-1.061 0.277-1.15 0.822l-2 12c-0.091 0.545 0.277 1.060 0.822 1.151 0.056 0.009 0.11 0.013 0.165 0.013 0.48 0 0.904-0.347 0.985-0.835z">
+                        </path>
+                    </svg></span> by JS_RC. Colombia 2023.</p>
+            <div class="d-flex">
+                <a href="https://github.com/JSebasRC" target="_blank"><img src="../assets/images/icon-github.png" alt=""
+                        width="30" class="mx-1 mx-md-2"></a>
+                <a href="https://www.linkedin.com/in/sebastianriascos/" target="_blank"><img
+                        src="../assets/images/icon-linkedin.png" alt="" width="30" class="mx-1 mx-md-2"></a>
+                <a href="" target="_blank"><img src="../assets/images/icon-behance.png" alt="" width="30"
+                        class="mx-1 mx-md-2"></a>
+                <a href="https://www.instagram.com/sebasrcordoba/" target="_blank"><img
+                        src="../assets/images/icon-instagram.png" alt="" width="30" class="mx-1 mx-md-2"></a>
+            </div>
         </div>
     </footer>
 
