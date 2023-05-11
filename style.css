@@ -141,9 +141,19 @@
     height: 100%; /* Altura de la imagen */
     object-fit: contain; /* Ajusta la imagen al contenedor */
 }
-
-
 /* FIN ESTILOS SECCIÓN EXPERIENCIA PAGE INDEX.HTML*/
+
+/*ESTILOS  PAGE PROFILE.HTML*/
+.container__icons-profile img{
+    max-width: 100px;
+    width: 100%;
+    margin: 2rem;
+}
+.container__icons-profile img:hover{
+    transition: all .2s ease-in-out;
+    transform: scale(1.2);
+}
+/*FIN ESTILOS  PAGE PROFILE.HTML*/
 /*ESTILOS FOOTER*/
 
 
