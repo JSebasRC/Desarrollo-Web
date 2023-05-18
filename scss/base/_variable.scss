@@ -1,0 +1,53 @@
+@import 'colores';
+
+/*CLASES DE COLORES DE TEXTO*/
+.text-orange {
+    color: $orange;
+}
+
+.text-black {
+    color: $black;
+}
+
+.text-green {
+    color: $green;
+}
+
+.text-gray-1 {
+    color: $gray-1;
+}
+
+.text-gray-2 {
+    color: $gray-2;
+}
+
+/*CLASES DE COLORES DE BACKGROUND*/
+.background-orange {
+    color: $orange;
+}
+
+.background-black {
+    background-color: $black;
+}
+
+.background-green {
+    background-color: $green;
+}
+
+.background-gray-1 {
+    background-color: $gray-1;
+}
+
+.background-gray-2 {
+    background-color: $gray-2;
+}
+
+/* Fuentes */
+
+.font-roboto-cond {
+    font-family: 'Roboto Condensed', Lato, Arial, sans-serif;
+}
+
+.font-roboto-mono {
+    font-family: 'Roboto Mono', monospace !important;
+}
