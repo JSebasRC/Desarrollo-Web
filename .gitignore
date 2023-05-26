@@ -1,5 +1,5 @@
 # Ignorar archivos Sass
-/scss/*.scss
+/scss/
 
 # Ignorar archivos JSON
-*package.json
+*.json
