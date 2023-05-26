@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/*CLASES DE COLORES DE TEXTO*/
+/* Mixins */
+/* CLASES DE COLORES DE TEXTO */
 .text-orange {
   color: #C66B0F;
 }
@@ -20,9 +21,9 @@
   color: #747274;
 }
 
-/*CLASES DE COLORES DE BACKGROUND*/
+/* CLASES DE COLORES DE BACKGROUND */
 .background-orange {
-  color: #C66B0F;
+  background-color: #C66B0F;
 }
 
 .background-black {
@@ -47,7 +48,7 @@
 }
 
 .font-roboto-mono {
-  font-family: "Roboto Mono", monospace !important;
+  font-family: "Roboto Mono", monospace;
 }
 
 /*ESTILOS HEADER*/
@@ -97,6 +98,31 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+/*ANIMACIÓN TEXTO*/
+@keyframes typing {
+  from {
+    width: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  to {
+    width: 100%;
+    padding-left: inherit;
+    padding-right: inherit;
+    margin-left: inherit;
+    margin-right: inherit;
+  }
+}
+.typing-animation {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid transparent;
+  animation: typing 4s steps(20) forwards;
+  text-align: center; /* Agregamos el estilo para centrar el texto */
 }
 
 /* FIN ESTILOS SECTION PERFIL PAGE INDEX.HTML*/
