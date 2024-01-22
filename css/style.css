@@ -2,7 +2,7 @@
 /* Mixins */
 /* CLASES DE COLORES DE TEXTO */
 .text-orange {
-  color: #C66B0F;
+  color: #c66b0f;
 }
 
 .text-black {
@@ -10,11 +10,11 @@
 }
 
 .text-green {
-  color: #91C68D;
+  color: #91c68d;
 }
 
 .text-gray-1 {
-  color: #E2DDD9;
+  color: #e2ddd9;
 }
 
 .text-gray-2 {
@@ -23,7 +23,7 @@
 
 /* CLASES DE COLORES DE BACKGROUND */
 .background-orange {
-  background-color: #C66B0F;
+  background-color: #c66b0f;
 }
 
 .background-black {
@@ -31,11 +31,11 @@
 }
 
 .background-green {
-  background-color: #91C68D;
+  background-color: #91c68d;
 }
 
 .background-gray-1 {
-  background-color: #E2DDD9;
+  background-color: #e2ddd9;
 }
 
 .background-gray-2 {
@@ -61,7 +61,7 @@
   color: #747274 !important;
 }
 .nav-link:hover {
-  color: #C66B0F !important;
+  color: #c66b0f !important;
 }
 
 .navbar-nav .active > .nav-link,
@@ -170,5 +170,7 @@
 }
 
 /*FIN ESTILOS  PAGE PROFILE.HTML*/
+
+/**/
 
 /*# sourceMappingURL=style.css.map */
