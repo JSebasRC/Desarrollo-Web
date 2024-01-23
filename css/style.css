@@ -1,8 +1,9 @@
 @charset "UTF-8";
+@import "../../assets/fonts/stylesheet.css";
 /* Mixins */
 /* CLASES DE COLORES DE TEXTO */
 .text-orange {
-  color: #c66b0f;
+  color: #C66B0F;
 }
 
 .text-black {
@@ -10,11 +11,11 @@
 }
 
 .text-green {
-  color: #91c68d;
+  color: #91C68D;
 }
 
 .text-gray-1 {
-  color: #e2ddd9;
+  color: #E2DDD9;
 }
 
 .text-gray-2 {
@@ -23,7 +24,7 @@
 
 /* CLASES DE COLORES DE BACKGROUND */
 .background-orange {
-  background-color: #c66b0f;
+  background-color: #C66B0F;
 }
 
 .background-black {
@@ -31,11 +32,11 @@
 }
 
 .background-green {
-  background-color: #91c68d;
+  background-color: #91C68D;
 }
 
 .background-gray-1 {
-  background-color: #e2ddd9;
+  background-color: #E2DDD9;
 }
 
 .background-gray-2 {
@@ -51,6 +52,14 @@
   font-family: "Roboto Mono", monospace;
 }
 
+.font-marker {
+  font-family: "Permanent Marker", cursive;
+}
+
+.font-work {
+  font-family: "Work Sans", sans-serif;
+}
+
 /*ESTILOS HEADER*/
 #header nav {
   height: 102px;
@@ -61,7 +70,7 @@
   color: #747274 !important;
 }
 .nav-link:hover {
-  color: #c66b0f !important;
+  color: #C66B0F !important;
 }
 
 .navbar-nav .active > .nav-link,
@@ -157,6 +166,15 @@
   /*se quita la numeración de las slides*/
 }
 
+.container-hv {
+  max-width: 920px;
+  margin: auto;
+}
+
+.fs-7 {
+  font-size: 14px !important;
+}
+
 /* FIN ESTILOS SECCIÓN EXPERIENCIA PAGE INDEX.HTML*/
 /*ESTILOS  PAGE PROFILE.HTML*/
 .container__icons-profile img {
@@ -169,8 +187,24 @@
   transform: scale(1.2);
 }
 
-/*FIN ESTILOS  PAGE PROFILE.HTML*/
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Esto asegura que el cuerpo ocupe al menos el 100% de la altura de la ventana. */
+}
 
-/**/
+main {
+  flex: 1; /* El contenido principal se expande para llenar el espacio restante. */
+}
+
+footer {
+  margin-top: auto; /* Empuja el pie de página hacia la parte inferior */
+  background-color: #333; /* Ajusta el color de fondo según tus necesidades */
+  color: white; /* Ajusta el color de texto según tus necesidades */
+  padding: 10px;
+  text-align: center;
+}
+
+/*FIN ESTILOS  PAGE PROFILE.HTML*/
 
 /*# sourceMappingURL=style.css.map */
